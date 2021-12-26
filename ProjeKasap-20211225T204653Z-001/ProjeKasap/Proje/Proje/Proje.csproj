@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89A92305-E468-43E1-8CCF-AAA01382225F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proje</RootNamespace>
+    <AssemblyName>Proje</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formlar\anaEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\anaEkran.Designer.cs">
+      <DependentUpon>anaEkran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\adminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\adminPanel.Designer.cs">
+      <DependentUpon>adminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\adminMusteriListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\adminMusteriListesi.Designer.cs">
+      <DependentUpon>adminMusteriListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\adminUrunEkleCikart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\adminUrunEkleCikart.Designer.cs">
+      <DependentUpon>adminUrunEkleCikart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\adminUrunGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\adminUrunGuncelle.Designer.cs">
+      <DependentUpon>adminUrunGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\adminGirisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\adminGirisEkrani.Designer.cs">
+      <DependentUpon>adminGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KasapDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KasapDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KasapDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KasapDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KasapDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KasapDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KasapDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KasapDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KasapDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KasapDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Sınıflar\URUNUM.cs" />
+    <Compile Include="KasapDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KasapDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sınıflar\musteriClass.cs" />
+    <Compile Include="Formlar\odemeCek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\odemeCek.Designer.cs">
+      <DependentUpon>odemeCek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\odemeKredikart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\odemeKredikart.Designer.cs">
+      <DependentUpon>odemeKredikart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\siparisEkranı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\siparisEkranı.Designer.cs">
+      <DependentUpon>siparisEkranı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\musteriGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\musteriGiris.Designer.cs">
+      <DependentUpon>musteriGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\kayitOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\kayitOl.Designer.cs">
+      <DependentUpon>kayitOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sınıflar\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formlar\anaEkran.resx">
+      <DependentUpon>anaEkran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\adminPanel.resx">
+      <DependentUpon>adminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\adminMusteriListesi.resx">
+      <DependentUpon>adminMusteriListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\adminUrunEkleCikart.resx">
+      <DependentUpon>adminUrunEkleCikart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\adminUrunGuncelle.resx">
+      <DependentUpon>adminUrunGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\adminGirisEkrani.resx">
+      <DependentUpon>adminGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\odemeCek.resx">
+      <DependentUpon>odemeCek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\odemeKredikart.resx">
+      <DependentUpon>odemeKredikart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\kayitOl.resx">
+      <DependentUpon>kayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\musteriGiris.resx">
+      <DependentUpon>musteriGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Formlar\siparisEkranı.resx">
+      <DependentUpon>siparisEkranı.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="KasapDataSet1.xsc">
+      <DependentUpon>KasapDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KasapDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KasapDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KasapDataSet1.xss">
+      <DependentUpon>KasapDataSet1.xsd</DependentUpon>
+    </None>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="KasapDataSet11.xsc">
+      <DependentUpon>KasapDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="KasapDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KasapDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KasapDataSet11.xss">
+      <DependentUpon>KasapDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="KasapDataSet2.xsc">
+      <DependentUpon>KasapDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KasapDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KasapDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KasapDataSet2.xss">
+      <DependentUpon>KasapDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KasapDataSet3.xsc">
+      <DependentUpon>KasapDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="KasapDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KasapDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KasapDataSet3.xss">
+      <DependentUpon>KasapDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="KasapDataSet4.xsc">
+      <DependentUpon>KasapDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="KasapDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KasapDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KasapDataSet4.xss">
+      <DependentUpon>KasapDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="KasapDataSet5.xsc">
+      <DependentUpon>KasapDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="KasapDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KasapDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KasapDataSet5.xss">
+      <DependentUpon>KasapDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulanık.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black Emblem Badge Vintage Retro Livestock Farm Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
